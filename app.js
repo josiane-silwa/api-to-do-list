@@ -9,6 +9,7 @@ const port = process.env.PORT;
 //
 // permite recebimento POST no formato json
 app.use(express.json());
+app.use(router);
 /////  app
 
 // inicia o servidor
