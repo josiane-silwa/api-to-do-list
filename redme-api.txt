@@ -1,0 +1,42 @@
+Projeto de API CRUD construido com NodeJs e PostgreSql
+
+Dependencias:
+pg
+express
+dotenv
+nodemon
+
+Para instalar e rodar o projeto:
+* Clonar o projeto 
+* Executar no teminal npm install
+* Para instalar as depencias:  npm pg express dotenv nodemon
+* Para rodar executar npm start 
+
+End-points implementados:
+consultas, consultas por id, adicionar, atualizar e deletar tarefas(tasks)
+
+Foram realizados testes simples utilizando Postman como mostra as figuras na pasta testes.
+Consulta todas as tarefas adicionadas
+GET => http://localhost:8080/tasks
+Consulta tarefa adicionada por id
+GET por id => http://localhost:8080/tasks/1
+Adiciona uma tarefa passando os seguintes paramentros (formato body json):
+POST => http://localhost:8080/tasks
+{
+  id: 6,
+  title: 'Estante',
+  status: 'pendente',
+  description: 'realizar a montagem da nova estante'
+}
+
+Altualiza uma tarefa adicionada passando os seguintes paramentros (formato body json):
+PATCH => http://localhost:8080/tasks/6
+{
+  id: 6,
+  title: 'Estante',
+  status: 'concluido',
+  description: 'realizar a montagem da nova estante'
+}
+
+Deleta uma tarefa passando como paramentro o id:
+DELETE => http://localhost:8080/tasks/6
