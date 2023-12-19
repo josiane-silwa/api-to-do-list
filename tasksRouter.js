@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const db = require("./models/tasksModels");
 const app = require("./app");
-const tasksMiddleware = require("./tasksMiddleware");
+//const tasksMiddleware = require("./tasksMiddleware");
 
 /// rota raiz
 router.get('/', (req, res) => res.json({ message: 'Funcionando!'}));
